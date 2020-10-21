@@ -1,11 +1,7 @@
 import React from 'react';
 
-function App() {
-  return (
-    <div>
-      <h1>Álvaro Bianor</h1>
-    </div>
-  );
-}
+const App: React.FC = () => {
+  return <h1>Alvim Bianor</h1>;
+};
 
 export default App;
