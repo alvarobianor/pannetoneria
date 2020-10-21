@@ -20,8 +20,11 @@ button {
 }
 #root {
   max-width: 960px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
   margin: 0 auto;
   padding: 40px 20px;
-  /* background-color: green; */
 }
 `;

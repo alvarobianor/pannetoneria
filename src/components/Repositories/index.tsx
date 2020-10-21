@@ -1,4 +1,5 @@
 import React from 'react';
+import { FiChevronRight } from 'react-icons/fi';
 
 import { Repository } from './styles';
 
@@ -21,6 +22,7 @@ const Repositories: React.FC<RepositoryDTO> = ({
           <strong>{title}</strong>
           <p>{description}</p>
         </div>
+        <FiChevronRight size="25" />
       </a>
 
       <a href="test">
@@ -29,6 +31,7 @@ const Repositories: React.FC<RepositoryDTO> = ({
           <strong>{title}</strong>
           <p>{description}</p>
         </div>
+        <FiChevronRight size="25" />
       </a>
 
       <a href="test">
@@ -37,6 +40,7 @@ const Repositories: React.FC<RepositoryDTO> = ({
           <strong>{title}</strong>
           <p>{description}</p>
         </div>
+        <FiChevronRight size="25" />
       </a>
 
       <a href="test">
@@ -45,6 +49,7 @@ const Repositories: React.FC<RepositoryDTO> = ({
           <strong>{title}</strong>
           <p>{description}</p>
         </div>
+        <FiChevronRight size="25" />
       </a>
     </Repository>
   );
