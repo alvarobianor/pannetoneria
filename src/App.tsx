@@ -1,7 +1,8 @@
 import React from 'react';
+import Routes from './routes/routes';
 
 const App: React.FC = () => {
-  return <h1>Alvim Bianor</h1>;
+  return <Routes />;
 };
 
 export default App;
