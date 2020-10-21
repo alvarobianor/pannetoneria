@@ -1,5 +1,6 @@
 import React from 'react';
-import { Title, Form, Repositories } from './styles';
+import { Title, Form } from './styles';
+import Repositories from '../../components/Repositories/index';
 
 const Dashboard: React.FC = () => {
   return (
@@ -19,40 +20,11 @@ const Dashboard: React.FC = () => {
           <button type="submit">Filter</button>
         </div>
       </Form>
-      <Repositories>
-        <a href="test">
-          <img
-            src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/panettone-50f77b4.jpg?quality=90"
-            alt="Álvaro Bianor"
-          />
-          <div>
-            <strong>Alvim rei delas</strong>
-            <p>Caba bom desenrolado</p>
-          </div>
-        </a>
-
-        <a href="test">
-          <img
-            src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/panettone-50f77b4.jpg?quality=90"
-            alt="Álvaro Bianor"
-          />
-          <div>
-            <strong>Alvim rei delas</strong>
-            <p>Caba bom desenrolado</p>
-          </div>
-        </a>
-
-        <a href="test">
-          <img
-            src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/panettone-50f77b4.jpg?quality=90"
-            alt="Álvaro Bianor"
-          />
-          <div>
-            <strong>Alvim rei delas</strong>
-            <p>Caba bom desenrolado</p>
-          </div>
-        </a>
-      </Repositories>
+      <Repositories
+        title="Alvim delas"
+        src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/panettone-50f77b4.jpg?quality=90"
+        description="foda bagarai"
+      />
     </>
   );
 };
