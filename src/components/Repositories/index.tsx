@@ -1,6 +1,6 @@
 import React from 'react';
 import { FiChevronRight } from 'react-icons/fi';
-
+import { Link } from 'react-router-dom';
 import { Repository } from './styles';
 
 interface RepositoryDTO {
@@ -16,41 +16,14 @@ const Repositories: React.FC<RepositoryDTO> = ({
 }: RepositoryDTO) => {
   return (
     <Repository>
-      <a href="test">
+      <Link to={`/details/${title}`}>
         <img src={src} alt="papai" />
         <div>
           <strong>{title}</strong>
           <p>{description}</p>
         </div>
         <FiChevronRight size="25" />
-      </a>
-
-      <a href="test">
-        <img src={src} alt="papai" />
-        <div>
-          <strong>{title}</strong>
-          <p>{description}</p>
-        </div>
-        <FiChevronRight size="25" />
-      </a>
-
-      <a href="test">
-        <img src={src} alt="papai" />
-        <div>
-          <strong>{title}</strong>
-          <p>{description}</p>
-        </div>
-        <FiChevronRight size="25" />
-      </a>
-
-      <a href="test">
-        <img src={src} alt="papai" />
-        <div>
-          <strong>{title}</strong>
-          <p>{description}</p>
-        </div>
-        <FiChevronRight size="25" />
-      </a>
+      </Link>
     </Repository>
   );
 };

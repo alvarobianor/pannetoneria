@@ -2,10 +2,6 @@ import styled from 'styled-components';
 
 import { shade } from 'polished';
 
-interface FormProps {
-  hasError: boolean;
-}
-
 export const Title = styled.h1`
   font-size: 48px;
   color: #3a3a3a;
@@ -19,7 +15,7 @@ export const Form = styled.form`
   max-width: 700px;
   display: flex;
   flex-direction: column;
-
+  margin-bottom: 30px;
   div {
     margin-top: 05px;
     max-width: 700px;
@@ -29,9 +25,9 @@ export const Form = styled.form`
       height: 70px;
       padding: 24px;
       border: 0;
-      border-radius: 10px 0 0 10px;
-      background-color: #fff;
-      border: 2px solid #fff;
+      border-radius: 20px;
+      background-color: #e07a16;
+      border: 2px solid #e07a16;
       border-right: 0;
       font-family: Roboto, sans-serif;
       font-size: 100%;
@@ -44,7 +40,7 @@ export const Form = styled.form`
         font-family: Roboto, sans-serif;
       }
     }
-    button {
+    /* button {
       width: 210px;
       height: 70px;
       background-color: #e07a16;
@@ -56,7 +52,7 @@ export const Form = styled.form`
       &:hover {
         background-color: ${shade(0.25, '#E07A16')};
       }
-    }
+    } */
   }
 `;
 

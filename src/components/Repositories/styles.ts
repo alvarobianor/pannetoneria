@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { shade } from 'polished';
 
 export const Repository = styled.div`
-  margin-top: 80px;
+  margin-top: 30px;
   max-width: 700px;
   a {
     height: 150px;
